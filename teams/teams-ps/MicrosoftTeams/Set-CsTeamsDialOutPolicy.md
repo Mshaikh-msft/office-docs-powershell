@@ -1,9 +1,9 @@
 ---
 applicable: Microsoft Teams
-author: officedocspr
+author: Mshaikh
 external help file: Microsoft.TeamsCmdlets.PowerShell.Custom.dll-help.xml
 Locale: en-US
-manager: bulenteg
+manager: Roykuntz
 Module Name: MicrosoftTeams
 ms.author: odocspr
 online version: https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamsdialoutpolicy
