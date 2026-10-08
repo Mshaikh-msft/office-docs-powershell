@@ -962,6 +962,45 @@ As an admin, you can use app setup policies to customize Microsoft Teams to high
 ### [New-CsTeamsCallHoldPolicy](New-CsTeamsCallHoldPolicy.md)
 Creates a new Teams call hold policy in your tenant. The Teams call hold policy is used to customize the call hold experience for Teams clients.
 
+### [New-CsTeamsCallBarringTreatment](New-CsTeamsCallBarringTreatment.md)
+Creates a Teams call barring treatment.
+
+### [New-CsTeamsDialOutPolicy](New-CsTeamsDialOutPolicy.md)
+Creates a Teams dial-out policy.
+
+### [Set-CsTeamsDialOutPolicy](Set-CsTeamsDialOutPolicy.md)
+Updates a Teams dial-out policy.
+
+### [Get-CsTeamsDialOutPolicy](Get-CsTeamsDialOutPolicy.md)
+Retrieves Teams dial-out policies.
+
+### [Remove-CsTeamsDialOutPolicy](Remove-CsTeamsDialOutPolicy.md)
+Removes a Teams dial-out policy.
+
+### [Grant-CsTeamsDialOutPolicy](Grant-CsTeamsDialOutPolicy.md)
+Assigns a Teams dial-out policy to a user.
+
+### [Set-CsTeamsCallBarringTreatment](Set-CsTeamsCallBarringTreatment.md)
+Updates a Teams call barring treatment.
+
+### [Get-CsTeamsCallBarringTreatment](Get-CsTeamsCallBarringTreatment.md)
+Gets Teams call barring treatments.
+
+### [Remove-CsTeamsCallBarringTreatment](Remove-CsTeamsCallBarringTreatment.md)
+Removes a Teams call barring treatment.
+
+### [Test-CsTeamsCallBarringTreatment](Test-CsTeamsCallBarringTreatment.md)
+Tests a Teams call barring treatment.
+
+### [New-CsTeamsSchedule](New-CsTeamsSchedule.md)
+Creates a Teams schedule.
+
+### [New-CsTeamsTimeRange](New-CsTeamsTimeRange.md)
+Creates a time range for a Teams schedule.
+
+### [New-CsTeamsWeeklyRecurrentSchedule](New-CsTeamsWeeklyRecurrentSchedule.md)
+Creates a weekly recurrent schedule definition.
+
 ### [New-CsTeamsCallingPolicy](New-CsTeamsCallingPolicy.md)
 Use this cmdlet to create a new instance of a Teams Calling Policy.
 
