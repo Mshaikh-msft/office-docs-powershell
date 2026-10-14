@@ -15,31 +15,31 @@ title: New-CsTeamsWeeklyRecurrentSchedule
 Creates a weekly recurrent schedule definition.
 ## SYNTAX
 ```
-New-CsTeamsWeeklyRecurrentSchedule [-MondayHours <object[]>] [-TuesdayHours <object[]>] [-WednesdayHours <object[]>] [-ThursdayHours <object[]>] [-FridayHours <object[]>] [-SaturdayHours <object[]>] [-SundayHours <object[]>] [-Complement] [<CommonParameters>]
+New-CsTeamsWeeklyRecurrentSchedule [-Monday <object[]>] [-Tuesday <object[]>] [-Wednesday <object[]>] [-Thursday <object[]>] [-Friday <object[]>] [-Saturday <object[]>] [-Sunday <object[]>] -Complement <bool> [<CommonParameters>]
 ```
 ## DESCRIPTION
-Creates a weekly recurrence from weekday time ranges. Use `-Complement` to invert the specified hours.
+Creates a weekly recurrence from weekday time ranges. Use `-Complement $false` to use the specified hours or `-Complement $true` to invert them.
 ## EXAMPLES
 ```powershell
 $range = New-CsTeamsTimeRange -Start "09:00" -End "17:00"
-$recurrence = New-CsTeamsWeeklyRecurrentSchedule -MondayHours @($range) -TuesdayHours @($range) -WednesdayHours @($range) -ThursdayHours @($range) -FridayHours @($range)
+$recurrence = New-CsTeamsWeeklyRecurrentSchedule -Monday @($range) -Complement $false
 ```
 ## PARAMETERS
-### -MondayHours
+### -Monday
 Specifies Monday time ranges.
-### -TuesdayHours
+### -Tuesday
 Specifies Tuesday time ranges.
-### -WednesdayHours
+### -Wednesday
 Specifies Wednesday time ranges.
-### -ThursdayHours
+### -Thursday
 Specifies Thursday time ranges.
-### -FridayHours
+### -Friday
 Specifies Friday time ranges.
-### -SaturdayHours
+### -Saturday
 Specifies Saturday time ranges.
-### -SundayHours
+### -Sunday
 Specifies Sunday time ranges.
 ### -Complement
-Inverts the specified weekday time ranges.
+Specifies whether to invert the specified weekday time ranges.
 ### CommonParameters
 This cmdlet supports the common parameters.
