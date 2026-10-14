@@ -15,19 +15,18 @@ title: New-CsTeamsSchedule
 Creates a Teams schedule.
 ## SYNTAX
 ```
-New-CsTeamsSchedule -Name <string> -WeeklyRecurrence <object> [<CommonParameters>]
+New-CsTeamsSchedule -WeeklyRecurrenceHours <object> [<CommonParameters>]
 ```
 ## DESCRIPTION
 Creates a schedule from a weekly recurrence.
 ## EXAMPLES
 ```powershell
-$recurrence = New-CsTeamsWeeklyRecurrentSchedule -MondayHours @($range)
-New-CsTeamsSchedule -Name "BusinessHours" -WeeklyRecurrence $recurrence
+$range = New-CsTeamsTimeRange -Start "09:00" -End "17:00"
+$recurrence = New-CsTeamsWeeklyRecurrentSchedule -Monday @($range) -Complement $false
+$schedule = New-CsTeamsSchedule -WeeklyRecurrenceHours $recurrence
 ```
 ## PARAMETERS
-### -Name
-Specifies the unique schedule name.
-### -WeeklyRecurrence
+### -WeeklyRecurrenceHours
 Specifies the weekly recurrence object.
 ### CommonParameters
 This cmdlet supports the common parameters.
