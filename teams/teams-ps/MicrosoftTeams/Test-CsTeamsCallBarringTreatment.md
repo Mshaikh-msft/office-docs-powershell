@@ -32,4 +32,5 @@ This cmdlet supports the common parameters.
 ## INPUTS
 ### None
 ## OUTPUTS
-### System.Boolean
+### Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.TestTeamsCallBarringTreatmentResponse
+Returns `IsBlocked`, `TreatmentName`, and `Reason`. `TreatmentName` is null unless a TeamsDialOutPolicy treatment blocks the scenario. `Reason` is null when allowed.
