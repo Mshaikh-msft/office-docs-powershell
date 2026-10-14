@@ -1,7 +1,7 @@
 ---
 applicable: Microsoft Teams
 author: Mshaikh
-external help file: Microsoft.TeamsCmdlets.PowerShell.Custom.dll-help.xml
+external help file: MicrosoftTeams-help.xml
 Locale: en-US
 manager: Roykuntz
 Module Name: MicrosoftTeams
