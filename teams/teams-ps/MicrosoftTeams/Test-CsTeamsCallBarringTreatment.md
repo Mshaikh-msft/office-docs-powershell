@@ -15,8 +15,8 @@ title: Test-CsTeamsCallBarringTreatment
 Evaluates dial-out policy enforcement for a user or resource account, destination number, and call scenario.
 ## SYNTAX
 ```
-Test-CsTeamsCallBarringTreatment -Identity <string> [<CommonParameters>]
-Test-CsTeamsCallBarringTreatment -Parent <string> -Name <string> [<CommonParameters>]
+Test-CsTeamsCallBarringTreatment -Identity "sip:user@contoso.com" -PhoneNumber "+14255550100" -CallScenario DialOut
+Test-CsTeamsCallBarringTreatment -Body $request
 ```
 ## DESCRIPTION
 Tests whether a call barring treatment can be resolved and used.
