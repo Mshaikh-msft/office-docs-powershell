@@ -35,4 +35,4 @@ This cmdlet supports the common parameters.
 ## INPUTS
 ### System.Object
 ## OUTPUTS
-### System.Object
+### None
