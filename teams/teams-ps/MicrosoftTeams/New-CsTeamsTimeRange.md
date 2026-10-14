@@ -15,10 +15,10 @@ title: New-CsTeamsTimeRange
 Creates a time range for a Teams schedule.
 ## SYNTAX
 ```
-New-CsTeamsTimeRange -Start <datetime> -End <datetime> [<CommonParameters>]
+New-CsTeamsTimeRange -Start <string> -End <string> [<CommonParameters>]
 ```
 ## DESCRIPTION
-Creates a time range with a start and end time.
+Creates a time range with a start and end time. Start and end times must use the `HH:mm` format, such as `09:00` and `17:00`.
 ## EXAMPLES
 ```powershell
 $range = New-CsTeamsTimeRange -Start "09:00" -End "17:00"
