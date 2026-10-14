@@ -15,21 +15,21 @@ title: Set-CsTeamsDialOutPolicy
 Updates a Teams dial-out policy.
 ## SYNTAX
 ```
-Set-CsTeamsDialOutPolicy -Identity <string> [-AllowedDestinations <string>] [-AllowedDestinationsPattern <string>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-CsTeamsDialOutPolicy -Identity <string> [-CallBarringTreatments <Object>] [-Description <string>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 ## DESCRIPTION
-Changes the destination scope or number pattern of an existing Teams dial-out policy.
+Updates the call barring treatments and description of an existing Teams dial-out policy.
 ## EXAMPLES
 ### Example 1
 ```powershell
-Set-CsTeamsDialOutPolicy -Identity "LobbyPhonePolicy" -AllowedDestinations "InternationalAndDomestic" -AllowedDestinationsPattern "^\+"
+Set-CsTeamsDialOutPolicy -Identity "LobbyPhonePolicy" -Description "Updated dial-out policy for lobby phones"
 ```
-Updates the policy for lobby phones.
+Updates the description of the policy for lobby phones.
 ## PARAMETERS
-### -AllowedDestinations
-Specifies `None`, `DomesticOnly`, `ZoneA`, or `InternationalAndDomestic`.
-### -AllowedDestinationsPattern
-Specifies the number pattern used to limit allowed destinations.
+### -CallBarringTreatments
+Specifies the call barring treatments associated with the policy.
+### -Description
+Specifies a description for the policy.
 ### -Identity
 Specifies the identity of the policy to update.
 ### CommonParameters
