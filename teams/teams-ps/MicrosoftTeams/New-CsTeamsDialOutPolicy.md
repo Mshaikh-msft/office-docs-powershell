@@ -18,25 +18,26 @@ Creates a Teams dial-out policy.
 
 ## SYNTAX
 ```
-New-CsTeamsDialOutPolicy -Identity <string> [-AllowedDestinations <string>] [-AllowedDestinationsPattern <string>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-CsTeamsDialOutPolicy -Identity <string> [-CallBarringTreatments <Object>] [-Description <string>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Creates a policy that controls the destinations and number patterns allowed for dial-out calls.
+Creates a Teams dial-out policy that can be configured with call barring treatments.
 
 ## EXAMPLES
 ### Example 1
 ```powershell
-New-CsTeamsDialOutPolicy -Identity "LobbyPhonePolicy" -AllowedDestinations "DomesticOnly" -AllowedDestinationsPattern "^\+1"
+New-CsTeamsDialOutPolicy -Identity "LobbyPhonePolicy" -Description "Dial-out policy for lobby phones"
+New-CsTeamsCallBarringTreatment -Parent "LobbyPhonePolicy" -Name "DomesticOnly" -AllowedDestinations "DomesticOnly" -AllowedDestinationsPattern "^\+1" -CallSource "DialOut"
 ```
-Creates a policy for lobby phones that permits domestic destinations matching the specified pattern.
+Creates a policy for lobby phones, then configures a treatment that permits domestic destinations matching the specified pattern.
 
 ## PARAMETERS
-### -AllowedDestinations
-Specifies `None`, `DomesticOnly`, `ZoneA`, or `InternationalAndDomestic`.
+### -CallBarringTreatments
+Specifies the call barring treatments associated with the policy.
 
-### -AllowedDestinationsPattern
-Specifies the number pattern used to limit allowed destinations.
+### -Description
+Specifies a description for the policy.
 
 ### -Identity
 Specifies the unique identity of the new policy.
