@@ -12,7 +12,7 @@ title: Test-CsTeamsCallBarringTreatment
 ---
 # Test-CsTeamsCallBarringTreatment
 ## SYNOPSIS
-Tests a Teams call barring treatment.
+Evaluates dial-out policy enforcement for a user or resource account, destination number, and call scenario.
 ## SYNTAX
 ```
 Test-CsTeamsCallBarringTreatment -Identity <string> [<CommonParameters>]

@@ -990,7 +990,7 @@ Gets Teams call barring treatments.
 Removes a Teams call barring treatment.
 
 ### [Test-CsTeamsCallBarringTreatment](Test-CsTeamsCallBarringTreatment.md)
-Tests a Teams call barring treatment.
+Evaluates dial-out policy enforcement for a user or resource account, destination number, and call scenario.
 
 ### [New-CsTeamsSchedule](New-CsTeamsSchedule.md)
 Creates a Teams schedule.
