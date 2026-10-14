@@ -19,7 +19,7 @@ Test-CsTeamsCallBarringTreatment -Identity "sip:user@contoso.com" -PhoneNumber "
 Test-CsTeamsCallBarringTreatment -Body $request
 ```
 ## DESCRIPTION
-Tests whether a call barring treatment can be resolved and used.
+Evaluates dial-out eligibility for the supplied user or resource account, destination number, and call scenario at the current time. The cmdlet does not place a call. Existing eligibility checks apply; TeamsDialOutPolicy treatments require ECS enablement for the account. ConferenceDialOut excludes user-based fallback. An allowed result does not guarantee live routing success.
 ## PARAMETERS
 ### -Identity
 Specifies the combined policy and treatment identity.
