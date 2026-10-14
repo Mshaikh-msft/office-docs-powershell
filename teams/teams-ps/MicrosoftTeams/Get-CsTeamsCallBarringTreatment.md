@@ -15,11 +15,11 @@ title: Get-CsTeamsCallBarringTreatment
 Gets Teams call barring treatments.
 ## SYNTAX
 ```
-Get-CsTeamsCallBarringTreatment -Identity <string> [<CommonParameters>]
-Get-CsTeamsCallBarringTreatment -Parent <string> [-Name <string>] [<CommonParameters>]
+Get-CsTeamsCallBarringTreatment [-Identity <string>] [<CommonParameters>]
+Get-CsTeamsCallBarringTreatment -Parent <string> -Name <string> [<CommonParameters>]
 ```
 ## DESCRIPTION
-Gets a treatment by combined identity or treatments under a parent policy.
+Gets a treatment by combined identity or by parent policy identity and treatment name.
 ## PARAMETERS
 ### -Identity
 Specifies the combined policy and treatment identity.
