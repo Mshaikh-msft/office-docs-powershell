@@ -23,10 +23,12 @@ Evaluates dial-out eligibility for the supplied user or resource account, destin
 ## PARAMETERS
 ### -Identity
 Specifies the object ID or SIP address of a user or resource account in the administered tenant. The `sip:` prefix is optional. A UPN works only when it matches the SIP address.
-### -Parent
-Specifies the parent policy identity.
-### -Name
-Specifies the treatment name with `Parent`.
+### -PhoneNumber
+Specifies the destination phone number to evaluate, in E.164 format.
+### -CallScenario
+Specifies the call scenario to evaluate, such as `DialOut`.
+### -Body
+Specifies a request object containing the identity, phone number, and call scenario. Use this parameter set instead of supplying the values individually.
 ### CommonParameters
 This cmdlet supports the common parameters.
 ## INPUTS
