@@ -37,4 +37,4 @@ This cmdlet supports the common parameters.
 ## INPUTS
 ### None
 ## OUTPUTS
-### System.Object
+### None
