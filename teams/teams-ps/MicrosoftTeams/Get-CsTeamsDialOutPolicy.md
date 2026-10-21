@@ -5,7 +5,7 @@ external help file: Microsoft.TeamsCmdlets.PowerShell.Custom.dll-help.xml
 Locale: en-US
 manager: Roykuntz
 Module Name: MicrosoftTeams
-ms.author: Mshaikh
+ms.author: mshaikh
 online version: https://learn.microsoft.com/powershell/module/microsoftteams/get-csteamsdialoutpolicy
 schema: 2.0.0
 title: Get-CsTeamsDialOutPolicy
