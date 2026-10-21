@@ -5,7 +5,7 @@ external help file: Microsoft.TeamsCmdlets.PowerShell.Custom.dll-help.xml
 Locale: en-US
 manager: Roykuntz
 Module Name: MicrosoftTeams
-ms.author: odocspr
+ms.author: Mshaikh
 online version: https://learn.microsoft.com/powershell/module/microsoftteams/new-csteamsschedule
 schema: 2.0.0
 title: New-CsTeamsSchedule
