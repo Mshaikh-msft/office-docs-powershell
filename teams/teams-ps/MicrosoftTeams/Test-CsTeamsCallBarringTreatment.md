@@ -5,7 +5,7 @@ external help file: MicrosoftTeams-help.xml
 Locale: en-US
 manager: Roykuntz
 Module Name: MicrosoftTeams
-ms.author: Mshaikh
+ms.author: mshaikh
 online version: https://learn.microsoft.com/powershell/module/microsoftteams/test-csteamscallbarringtreatment
 schema: 2.0.0
 title: Test-CsTeamsCallBarringTreatment
